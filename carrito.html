@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Mi Carrito - Pikiss</title>
+    <link rel="icon" href="resources/Logo-pikiss.svg">
+</head>
+
+<body>
+
+    <!-- MISMO HEADER QUE EN INDEX.HTML -->
+    <header class="header">
+        <a class="logo-nav" href="index.html"><img src="resources/pikkisLogo-letras.svg" alt=""></a>
+        <label class="menu-select" for="menu-checkbox"></label>
+        <input type="checkbox" id="menu-checkbox">
+
+        <nav class="navbar">
+            <ul class="nav-ul">
+                <li><a class="logoNav" href="index.html"><img src="resources/pikkisLogo-letras.svg" alt=""></a></li>
+                <li class="item-ul"><a href="index.html#"><img src="resources/icons8-casa.svg" alt="">Inicio</a></li>
+                <li class="item-ul"><a href="index.html#promociones"><img src="resources/icons8-precio-caliente-24.svg"
+                            alt="">Promociones</a></li>
+                <li class="item-ul"><a href="index.html#hamburguesas"><img src="resources/icons8-hamburguesa-24.svg"
+                            alt="">Hamburguesas</a></li>
+                <li class="item-ul"><a href="index.html#encuentranos"><img src="resources/Location.svg"
+                            alt="">Encuentranos</a></li>
+                <li class="item">
+                    <a href="carrito.html" style="position: relative;">
+                        <img src="resources/carrito-de-compras-100 .png" alt="" style="height: 40px;">
+                        <span id="contador-carrito" class="contador-carrito" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO DEL CARRITO -->
+    <section class="carrito-seccion">
+        <div class="carrito-container">
+
+            <!-- COLUMNA IZQUIERDA: PRODUCTOS -->
+            <div class="carrito-productos">
+                <h1>Carro <span id="cantidad-productos">(0 productos)</span></h1>
+
+                <div id="lista-productos" class="lista-productos">
+                    <!-- Los productos se cargarán aquí con JavaScript -->
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: RESUMEN -->
+            <div class="carrito-resumen">
+                <h2>Resumen de la orden</h2>
+
+                <div class="resumen-detalle">
+                    <div class="resumen-linea">
+                        <span>Productos (<span id="total-items">0</span>)</span>
+                        <span id="subtotal">S/ 0.00</span>
+                    </div>
+
+                    <div class="resumen-linea">
+                        <span>Delivery</span>
+                        <span id="costo-delivery" class="texto-verde">GRATIS</span>
+                    </div>
+
+                    <div class="resumen-linea linea-total">
+                        <strong>Total:</strong>
+                        <strong id="total-final">S/ 0.00</strong>
+                    </div>
+                </div>
+
+                <button id="btn-continuar" class="btn-continuar">Continuar compra</button>
+                <button id="btn-vaciar-carrito" class="btn-vaciar-carrito">Vaciar carrito</button>
+
+                <div class="mensaje-volver">
+                    <a href="index.html#promociones">← Volver a comprar</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MISMO FOOTER QUE EN INDEX.HTML -->
+    <footer class="footer">
+        <div class="f-secciones">
+            <div class="f-seccion-item">
+                <h4>Nuestras redes</h4>
+                <div class="f-redes">
+                    <a href="https://www.facebook.com/pikisspiura/?locale=es_LA" target="_blank"><img
+                            src="resources/icons8-facebook-nuevo.svg" alt=""></a>
+                    <a href="https://www.instagram.com/pikiss.oficial/" target="_blank"><img src="resources/ig.svg"
+                            alt=""></a>
+                    <a href="https://www.tiktok.com/@pikiss.oficial" target="_blank"><img
+                            src="resources/icons8-tik-tok.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="f-seccion-item">
+                <h4>Informacion</h4>
+                <p><strong>Horarios:</strong> <br>Lunes a Domingo <br>6:00 PM - 00:00 AM</p>
+            </div>
+            <div class="f-seccion-item">
+                <h4>Delivery</h4>
+                <p>Entrega gratis <br>en pedidos mayores a S/. 30 <br>Tiempo: 20-25 min</p>
+            </div>
+            <div class="f-seccion-item">
+                <h4>Contacto</h4>
+                <p><strong>Teléfono:</strong> 01-619-1919 <br><strong>WhatsApp:</strong> 968871644</p>
+            </div>
+        </div>
+        <div style="margin: 0; padding: 0; background-color: #8d8d8db9; width: 95%; height: 0.01rem; margin: auto;">
+        </div>
+        <div class="copy">
+            <p>&copy; Pikiss 2025. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Notificación -->
+    <div id="notificacion" class="notificacion-carrito"></div>
+
+    <script src="script-carrito.js"></script>
+</body>
+
+</html>
