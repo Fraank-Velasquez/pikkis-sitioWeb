@@ -29,7 +29,7 @@
         <nav class="navbar">
             <ul class="nav-ul">
                 <li><a class="logoNav" href="#"><img src="resources/pikkisLogo-letras.svg" alt=""></a></li>
-                <li class="item-ul"><a href="#"><img src="resources/icons8-casa.svg" alt="">Inicio</a></li>
+                <li class="item-ul"><a href="#inicio"><img src="resources/icons8-casa.svg" alt="">Inicio</a></li>
                 <li class="item-ul"><a href="#promociones "><img src="resources/icons8-precio-caliente-24.svg"
                             alt="">Promociones</a>
                 </li>
@@ -38,8 +38,10 @@
                 </li>
                 <li class="item-ul"><a href="#encuentranos"><img src="resources/Location.svg" alt="">Encuentranos</a>
                 </li>
-                <li class="item"><a href="#"><img src="resources/carrito-de-compras-100 .png" alt=""
-                            style="height: 40px"></a>
+                <li class="item"><a href="carrito.html" style="position: relative;">
+                        <img src="resources/carrito-de-compras-100 .png" alt="" style="height: 40px;">
+                        <span id="contador-carrito" class="contador-carrito" style="display: none; ">0</span>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -75,11 +77,13 @@
         </div>
 
         <div class="tarjetas-productos" style="position: relative;">
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Combo Mega" data-precio="35.90"
+                data-descripcion="Hamburguesa Clásica + Papas Grandes + inka cola 500ml">
 
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/combo2.png" alt="">
                 </div>
@@ -94,10 +98,12 @@
                     </p>
                 </div>
             </div>
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Combo Clasico" data-precio="25.90"
+                data-descripcion="5 Hamburguesas clasicas + 5 gaseosas Seven UP de 650ml">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/combo3.png" alt="">
                 </div>
@@ -113,10 +119,12 @@
 
                 </div>
             </div>
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Combo Royal" data-precio="15.90"
+                data-descripcion="1 hamburguesa de jamón y queso + Sprite de 500 ml.">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/combo2.png" alt="">
                 </div>
@@ -133,10 +141,12 @@
 
                 </div>
             </div>
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Combo Hawaiano" data-precio="17.50"
+                data-descripcion="Hamburguesa Clásica + Papas Grandes + inka cola 500ml">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/combo3.png" alt="">
                 </div>
@@ -152,10 +162,12 @@
 
                 </div>
             </div>
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Combo Clasico" data-precio="21.50"
+                data-descripcion="2 Hamburguesas clasica + 2 vaso de chicha morada o maracuya">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/combo2.png" alt="">
                 </div>
@@ -185,10 +197,12 @@
         </div>
         <div class="tipos-producto tp-burgers tp-burgers-small"> > Clasicas</div>
         <div class="tarjetas-productos">
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Clasica" data-precio="10.90"
+                data-descripcion="Hamburguesa Clásica + Papas medianas">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/clasica2.png" alt="">
                 </div>
@@ -201,10 +215,12 @@
                 </div>
             </div>
 
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Clasica de siempre" data-precio="12.90"
+                data-descripcion="Hamburguesa Clásica + Papas Grandes + queso y tocino">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/clasica1.png" alt="">
                 </div>
@@ -216,10 +232,12 @@
                     <p>S/. 12.90</p>
                 </div>
             </div>
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Especial" data-precio="15.90"
+                data-descripcion="Pan especial+ Papas Grandes + queso + huevo y tocino">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/clasica2.png" alt="">
                 </div>
@@ -231,10 +249,12 @@
                     <p>S/. 15.90</p>
                 </div>
             </div>
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Clasicazaa" data-precio="9.50"
+                data-descripcion="Pan especial,lechuga, tomate ,carne,papitas al hilo y cremas al gusto">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/clasica1.png" alt="">
                 </div>
@@ -247,10 +267,12 @@
                 </div>
             </div>
 
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Chesse Burger" data-precio="15.90"
+                data-descripcion="Pan especial,lechuga, tomate+ carne de res + queso laive + papitas al hilo y cremas al gusto">
                 <div class="imagen-producto imagen-producto2">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/clasica2.png" alt="">
                 </div>
@@ -267,10 +289,12 @@
         <div class="scroll-seccion"> ← Desliza para ver más → </div>
         <div class="tipos-producto tp-burgers">> Contundentes</div>
         <div class="tarjetas-productos">
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Contundente 1" data-precio="10.90"
+                data-descripcion="Hamburguesa Clásica + Papas medianas">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/clasica2.png" alt="">
                 </div>
@@ -283,10 +307,12 @@
                 </div>
             </div>
 
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Contundente 2" data-precio="12.90"
+                data-descripcion="Hamburguesa Clásica + Papas Grandes + queso y tocino">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/contundente1 .png" alt="">
                 </div>
@@ -298,10 +324,12 @@
                     <p>S/. 12.90</p>
                 </div>
             </div>
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Contundente 3" data-precio="35.90"
+                data-descripcion="Hamburguesa Clásica + Papas Grandes + inka cola 500ml">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/contundente2.png" alt="">
                 </div>
@@ -314,10 +342,12 @@
                 </div>
             </div>
 
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Contundente 4" data-precio="15.90"
+                data-descripcion="Hamburguesa Clásica + Papas Grandes + inka cola 500ml">
                 <div class="imagen-producto imagen-producto2">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/contundente1 .png" alt="">
                 </div>
@@ -330,10 +360,12 @@
                 </div>
             </div>
 
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Contundente 5" data-precio="35.90"
+                data-descripcion="Hamburguesa Clásica + Papas Grandes + inka cola 500ml">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/contundente2.png" alt="">
                 </div>
@@ -350,10 +382,12 @@
         <div class="scroll-seccion"> ← Desliza para ver más → </div>
         <div class="tipos-producto tp-burgers">> Adicionales</div>
         <div class="tarjetas-productos">
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Inca Kola de 2500 ml" data-precio="2.50"
+                data-descripcion="Gaseosa inka cola en lata de 250ml">
                 <div class="imagen-producto inca-kola">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/papas-fritas.png" alt="">
                 </div>
@@ -366,10 +400,12 @@
                 </div>
             </div>
 
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Inca Kola de 2500 ml" data-precio="2.50"
+                data-descripcion="Gaseosa inka cola en lata de 250ml">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/inca-kola.png" alt="">
                 </div>
@@ -381,10 +417,12 @@
                     <p>S/. 2.50</p>
                 </div>
             </div>
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Chorizo + huevo" data-precio="4.00"
+                data-descripcion="Chorizo parrilero">
                 <div class="imagen-producto">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="" alt="">
                 </div>
@@ -397,10 +435,11 @@
                 </div>
             </div>
 
-            <div class="producto-tarjeta">
+            <div class="producto-tarjeta" data-nombre="Jamon" data-precio="4.50" data-descripcion="Jamon serrano">
                 <div class="imagen-producto imagen-producto2">
                     <div class="boton-agegar">
-                        <a href="#"><img src="resources/agregar-40.png" alt=""></a>
+                        <button type="button" class="btn-agregar-carrito"><img src="resources/agregar-40.png"
+                                alt="Agregar al carrito"></button>
                     </div>
                     <img src="resources/hamburguesas/" alt="">
                 </div>
@@ -613,6 +652,9 @@
         </div>
 
     </footer>
+    <!-- Notificación flotante para index -->
+    <div id="notificacion" class="notificacion-carrito"></div>
+    <script src="script.js"></script>
 
 
 </body>
